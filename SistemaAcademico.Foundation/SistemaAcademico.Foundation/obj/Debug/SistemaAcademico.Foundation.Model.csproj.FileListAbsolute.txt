@@ -1,0 +1,5 @@
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\bin\Debug\SistemaAcademico.Foundation.dll
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\bin\Debug\SistemaAcademico.Foundation.pdb
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\obj\Debug\SistemaAcademico.Foundation.dll
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\obj\Debug\SistemaAcademico.Foundation.pdb

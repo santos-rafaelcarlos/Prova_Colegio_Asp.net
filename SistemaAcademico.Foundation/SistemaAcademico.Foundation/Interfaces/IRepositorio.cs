@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistemaAcademico.Foundation
+{
+    public interface IRepositorio<T> where T : class,IItem
+    {
+        IQueryable<T> RetornaTodos();
+        IQueryable<T> RetornaPorID(Guid[] IDs);
+        void Salvar(T item);        
+        void Remover(T item);
+        T RetornaPorID(Guid id);
+    }
+}
