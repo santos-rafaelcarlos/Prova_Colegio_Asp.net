@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="87325567-602e-4ff9-bd5a-fb3073d02c70" name="Fer@FER-PC 2013-06-08 18:57:19" runUser="Fer-PC\Fer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ddc6cfc6-e284-4f6f-9302-ab158bdb5301">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Fer_FER-PC 2013-06-08 18_57_19">
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.NHibernate\bin\Debug\CamadaAcessoDados.NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.DAL\bin\Debug\CamadaAcessoDados.DAL.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.Repositorio\bin\Debug\CamadaAcessoDados.Repositorio.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\bin\Debug\SistemaAcademico.Foundation.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.EntityFramework\bin\Debug\CamadaAcessoDados.EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-08T18:57:19.1101366-03:00" queuing="2013-06-08T18:57:27.4396130-03:00" start="2013-06-08T18:57:28.0946505-03:00" finish="2013-06-08T19:00:08.5058255-03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="FER-PC" outcome="Error" timestamp="2013-06-08T19:00:08.4498223-03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarEntityFramework" storage="c:\users\fer\documents\github\prova_colegio_asp.net\sistemaacademico.foundation\camadaacessodados.teste\bin\debug\camadaacessodados.teste.dll" id="05cbdf22-f78a-918d-d853-be565652742a">
+      <Execution id="ee8dcfec-ba7a-4cd8-baa8-b7cb24d74d96" />
+      <TestMethod codeBase="C:/Users/Fer/Documents/GitHub/Prova_Colegio_Asp.net/SistemaAcademico.Foundation/CamadaAcessoDados.Teste/bin/Debug/CamadaAcessoDados.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CamadaAcessoDados.Teste.Teste, CamadaAcessoDados.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarEntityFramework" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05cbdf22-f78a-918d-d853-be565652742a" executionId="ee8dcfec-ba7a-4cd8-baa8-b7cb24d74d96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ee8dcfec-ba7a-4cd8-baa8-b7cb24d74d96" testId="05cbdf22-f78a-918d-d853-be565652742a" testName="CriarEntityFramework" computerName="FER-PC" duration="00:02:39.8391422" startTime="2013-06-08T18:57:28.6656832-03:00" endTime="2013-06-08T19:00:08.5048254-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee8dcfec-ba7a-4cd8-baa8-b7cb24d74d96">
+    </UnitTestResult>
+  </Results>
+</TestRun>

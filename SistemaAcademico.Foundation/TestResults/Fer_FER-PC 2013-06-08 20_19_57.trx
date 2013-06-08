@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="aa20902b-61bf-4984-a76f-981d8fbf0672" name="Fer@FER-PC 2013-06-08 20:19:57" runUser="Fer-PC\Fer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ddc6cfc6-e284-4f6f-9302-ab158bdb5301">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Fer_FER-PC 2013-06-08 20_19_57">
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.NHibernate\bin\Debug\CamadaAcessoDados.NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.DAL\bin\Debug\CamadaAcessoDados.DAL.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.Repositorio\bin\Debug\CamadaAcessoDados.Repositorio.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\bin\Debug\SistemaAcademico.Foundation.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.EntityFramework\bin\Debug\CamadaAcessoDados.EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-08T20:19:57.2147240-03:00" queuing="2013-06-08T20:20:04.9461662-03:00" start="2013-06-08T20:20:06.1572355-03:00" finish="2013-06-08T20:24:35.0506153-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarEntityFramework" storage="c:\users\fer\documents\github\prova_colegio_asp.net\sistemaacademico.foundation\camadaacessodados.teste\bin\debug\camadaacessodados.teste.dll" id="05cbdf22-f78a-918d-d853-be565652742a">
+      <Execution id="e0ed988d-f520-4087-a537-eee910bda1d8" />
+      <TestMethod codeBase="C:/Users/Fer/Documents/GitHub/Prova_Colegio_Asp.net/SistemaAcademico.Foundation/CamadaAcessoDados.Teste/bin/Debug/CamadaAcessoDados.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CamadaAcessoDados.Teste.Teste, CamadaAcessoDados.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarEntityFramework" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05cbdf22-f78a-918d-d853-be565652742a" executionId="e0ed988d-f520-4087-a537-eee910bda1d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e0ed988d-f520-4087-a537-eee910bda1d8" testId="05cbdf22-f78a-918d-d853-be565652742a" testName="CriarEntityFramework" computerName="FER-PC" duration="00:04:23.6079900" startTime="2013-06-08T20:20:07.1802940-03:00" endTime="2013-06-08T20:24:33.8885488-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0ed988d-f520-4087-a537-eee910bda1d8">
+      <Output>
+        <StdOut>if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[TitularID]') AND parent_object_id = OBJECT_ID('Pessoa'))
+alter table Pessoa  drop constraint TitularID
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[ID]') AND parent_object_id = OBJECT_ID('Pessoa'))
+alter table Pessoa  drop constraint ID
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK77C034CDDC5B82DB]') AND parent_object_id = OBJECT_ID('Aluno'))
+alter table Aluno  drop constraint FK77C034CDDC5B82DB
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK77C034CD2DA116A7]') AND parent_object_id = OBJECT_ID('Aluno'))
+alter table Aluno  drop constraint FK77C034CD2DA116A7
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK964E0FA5DC5B82DB]') AND parent_object_id = OBJECT_ID('Professor'))
+alter table Professor  drop constraint FK964E0FA5DC5B82DB
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK1C15D8317DAB0DBE]') AND parent_object_id = OBJECT_ID('Turma'))
+alter table Turma  drop constraint FK1C15D8317DAB0DBE
+
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Pessoa') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Pessoa
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Aluno') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Aluno
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Professor') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Professor
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Turma') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Turma
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Endereco') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Endereco
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Telefone') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Telefone
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[TitularID]') AND parent_object_id = OBJECT_ID('Pessoa'))
+alter table Pessoa  drop constraint TitularID
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[ID]') AND parent_object_id = OBJECT_ID('Pessoa'))
+alter table Pessoa  drop constraint ID
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK77C034CDDC5B82DB]') AND parent_object_id = OBJECT_ID('Aluno'))
+alter table Aluno  drop constraint FK77C034CDDC5B82DB
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK77C034CD2DA116A7]') AND parent_object_id = OBJECT_ID('Aluno'))
+alter table Aluno  drop constraint FK77C034CD2DA116A7
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK964E0FA5DC5B82DB]') AND parent_object_id = OBJECT_ID('Professor'))
+alter table Professor  drop constraint FK964E0FA5DC5B82DB
+
+
+    if exists (select 1 from sys.objects where object_id = OBJECT_ID(N'[FK1C15D8317DAB0DBE]') AND parent_object_id = OBJECT_ID('Turma'))
+alter table Turma  drop constraint FK1C15D8317DAB0DBE
+
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Pessoa') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Pessoa
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Aluno') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Aluno
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Professor') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Professor
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Turma') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Turma
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Endereco') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Endereco
+
+    if exists (select * from dbo.sysobjects where id = object_id(N'Telefone') and OBJECTPROPERTY(id, N'IsUserTable') = 1) drop table Telefone
+
+    create table Pessoa (
+        ID UNIQUEIDENTIFIER not null,
+       Nome NVARCHAR(MAX) null,
+       DataNascimento DATETIME null,
+       Telefone_id UNIQUEIDENTIFIER null,
+       Endereco_id UNIQUEIDENTIFIER null,
+       primary key (ID)
+    )
+
+    create table Aluno (
+        PessoaID UNIQUEIDENTIFIER not null,
+       Status NVARCHAR(255) null,
+       Turma_id UNIQUEIDENTIFIER null,
+       primary key (PessoaID)
+    )
+
+    create table Professor (
+        PessoaID UNIQUEIDENTIFIER not null,
+       Status NVARCHAR(255) null,
+       Nivel NVARCHAR(MAX) null,
+       primary key (PessoaID)
+    )
+
+    create table Turma (
+        ID UNIQUEIDENTIFIER not null,
+       Status NVARCHAR(255) null,
+       Codigo NVARCHAR(MAX) null,
+       Nivel NVARCHAR(MAX) null,
+       DataInicio DATETIME null,
+       DataFim DATETIME null,
+       HoraInicio DATETIME null,
+       HoraFim DATETIME null,
+       Professor_id UNIQUEIDENTIFIER null,
+       primary key (ID)
+    )
+
+    create table Endereco (
+        ID UNIQUEIDENTIFIER not null,
+       Bairro NVARCHAR(MAX) null,
+       CEP INT null,
+       Cidade NVARCHAR(MAX) null,
+       Complemento NVARCHAR(MAX) null,
+       Logradouro NVARCHAR(MAX) null,
+       Numero INT null,
+       TipoLogradouro NVARCHAR(MAX) null,
+       UF NVARCHAR(255) null,
+       primary key (ID)
+    )
+
+    create table Telefone (
+        TitularID UNIQUEIDENTIFIER not null,
+       DDD INT null,
+       Numero INT null,
+       primary key (TitularID)
+    )
+
+    alter table Pessoa 
+        add constraint TitularID 
+        foreign key (Telefone_id) 
+        references Telefone
+
+    alter table Pessoa 
+        add constraint ID 
+        foreign key (Endereco_id) 
+        references Endereco
+
+    alter table Aluno 
+        add constraint FK77C034CDDC5B82DB 
+        foreign key (PessoaID) 
+        references Pessoa
+
+    alter table Aluno 
+        add constraint FK77C034CD2DA116A7 
+        foreign key (Turma_id) 
+        references Turma
+
+    alter table Professor 
+        add constraint FK964E0FA5DC5B82DB 
+        foreign key (PessoaID) 
+        references Pessoa
+
+    alter table Turma 
+        add constraint FK1C15D8317DAB0DBE 
+        foreign key (Professor_id) 
+        references Professor</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

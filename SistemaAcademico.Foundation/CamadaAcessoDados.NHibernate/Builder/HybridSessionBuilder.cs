@@ -59,8 +59,11 @@ namespace CamadaAcessoDados.NHibernate
 
         public static FluentConfiguration Build()
         {
+            string connString = @"Data Source=FER-PC\SQLEXPRESS;Initial Catalog=ColegioNH;Integrated Security=True";
+
             return Fluently.Configure()
-                           .Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromAppSetting("Colegio")))
+                           //.Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromAppSetting("Colegio")))
+                           .Database(MsSqlConfiguration.MsSql2008.ConnectionString(connString))
                            .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()).Conventions.Add<StringColumnLengthConvention>())
                            .ExposeConfiguration(BuildSchema);
         }
@@ -69,11 +72,11 @@ namespace CamadaAcessoDados.NHibernate
         {
             config.SetProperty("current_session_context_class", "thread_static");
 
-            new SchemaExport(config)
-                .Drop(true, true);
+            //new SchemaExport(config)
+            //    .Drop(true, true);
 
-            new SchemaExport(config)
-                .Create(true, true);
+            //new SchemaExport(config)
+            //    .Create(true, true);
         }
 
         public static void ResetSession()

@@ -15,7 +15,7 @@ namespace CamadaAcessoDados.EntityFramework
         {
             if (_context == null)
             {
-                string connString = @"Data Source=FER-PC\SQLEXPRESS;Initial Catalog=Colegio;Integrated Security=True";
+                string connString = @"Data Source=FER-PC\SQLEXPRESS;Initial Catalog=ColegioEF;Integrated Security=True";
                 _context = new ColegioContext(connString);
 
                 _context.Configuration.LazyLoadingEnabled = true;

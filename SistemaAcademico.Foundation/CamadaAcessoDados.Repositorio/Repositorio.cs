@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SistemaAcademico.Foundation;
-using CamadaAcessoDados.EntityFramework;
-//using CamadaAcessoDados.NHibernate;
+//using CamadaAcessoDados.EntityFramework;
+using CamadaAcessoDados.NHibernate;
 
 namespace CamadaAcessoDados.Repositorio
 {
-    public class RepositorioGenerico<T> : IRepositorio<T> where T : class,IItem
+    public class Repositorio<T> : IRepositorio<T> where T : class,IItem
     {
-        private static RepositorioGenerico<T> instancia;
-        internal static RepositorioGenerico<T> Instancia
+        private static Repositorio<T> instancia;
+        internal static Repositorio<T> Instancia
         {
             get
             {
                 if (instancia == null)
-                    instancia = new RepositorioGenerico<T>();
+                    instancia = new Repositorio<T>();
                 return instancia;
             }
         }
