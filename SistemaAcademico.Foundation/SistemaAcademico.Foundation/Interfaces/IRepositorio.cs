@@ -8,8 +8,8 @@ namespace SistemaAcademico.Foundation
 {
     public interface IRepositorio<T> where T : class,IItem
     {
-        IQueryable<T> RetornaTodos();
-        IQueryable<T> RetornaPorID(Guid[] IDs);
+        T[] RetornaTodos();
+        T[] RetornaPorID(Guid[] IDs);
         void Salvar(T item);        
         void Remover(T item);
         T RetornaPorID(Guid id);

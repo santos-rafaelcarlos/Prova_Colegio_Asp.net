@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using SistemaAcademico.Foundation;
-using CamadaAcessoDados.NHibernate;
+using CamadaAcessoDados.EntityFramework;
+//using CamadaAcessoDados.NHibernate;
 
-namespace Repositorios
+namespace CamadaAcessoDados.Repositorio
 {
     public class RepositorioGenerico<T> : IRepositorio<T> where T : class,IItem
     {
@@ -38,11 +41,10 @@ namespace Repositorios
         {
             return Persistencia<T>.Instancia.DAOGenerico.RetornaPorID(id);
         }
-        
+
         public T[] RetornaPorID(Guid[] iDs)
         {
-            return Persistencia<T>.Instancia.DAOGenerico.RetornaPorID(iDs);           
+            return Persistencia<T>.Instancia.DAOGenerico.RetornaPorID(iDs);
         }
     }
 }
-

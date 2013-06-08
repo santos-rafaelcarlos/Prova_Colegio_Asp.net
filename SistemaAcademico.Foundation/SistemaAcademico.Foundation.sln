@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaAcessoDados.DAL", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaAcessoDados.NHibernate", "CamadaAcessoDados.NHibernate\CamadaAcessoDados.NHibernate.csproj", "{2D242434-876C-4854-8CED-1B5CD24BFA93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaAcessoDados.EntityFramework", "CamadaAcessoDados.EntityFramework\CamadaAcessoDados.EntityFramework.csproj", "{92F3D2E9-D053-4B5A-918C-4255B4AD3A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaAcessoDados.Repositorio", "CamadaAcessoDados.Repositorio\CamadaAcessoDados.Repositorio.csproj", "{CC18A422-9EAF-421A-90D9-92FAEF267B1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{2D242434-876C-4854-8CED-1B5CD24BFA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D242434-876C-4854-8CED-1B5CD24BFA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D242434-876C-4854-8CED-1B5CD24BFA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F3D2E9-D053-4B5A-918C-4255B4AD3A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F3D2E9-D053-4B5A-918C-4255B4AD3A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F3D2E9-D053-4B5A-918C-4255B4AD3A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F3D2E9-D053-4B5A-918C-4255B4AD3A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC18A422-9EAF-421A-90D9-92FAEF267B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC18A422-9EAF-421A-90D9-92FAEF267B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC18A422-9EAF-421A-90D9-92FAEF267B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC18A422-9EAF-421A-90D9-92FAEF267B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +49,7 @@ Global
 		{CA71966D-7810-45CF-AF1D-3EF47491B48F} = {9A06E7A0-AA9A-44F3-A529-040DC9B3A02B}
 		{F69B8AE2-B176-4FA6-84B1-9A9BCEFDB08B} = {5A0DB852-3813-419D-914C-F304CD95463C}
 		{2D242434-876C-4854-8CED-1B5CD24BFA93} = {5A0DB852-3813-419D-914C-F304CD95463C}
+		{92F3D2E9-D053-4B5A-918C-4255B4AD3A98} = {5A0DB852-3813-419D-914C-F304CD95463C}
+		{CC18A422-9EAF-421A-90D9-92FAEF267B1F} = {5A0DB852-3813-419D-914C-F304CD95463C}
 	EndGlobalSection
 EndGlobal
