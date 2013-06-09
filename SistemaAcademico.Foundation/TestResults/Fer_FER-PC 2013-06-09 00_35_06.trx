@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="727f80d6-6f74-40eb-967c-04f6d5375497" name="Fer@FER-PC 2013-06-09 00:35:06" runUser="Fer-PC\Fer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ddc6cfc6-e284-4f6f-9302-ab158bdb5301">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Fer_FER-PC 2013-06-09 00_35_06">
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.NHibernate\bin\Debug\CamadaAcessoDados.NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.DAL\bin\Debug\CamadaAcessoDados.DAL.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.Repositorio\bin\Debug\CamadaAcessoDados.Repositorio.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.Foundation\bin\Debug\SistemaAcademico.Foundation.dll" />
+      <DeploymentItem filename="C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\CamadaAcessoDados.EntityFramework\bin\Debug\CamadaAcessoDados.EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-09T00:35:06.9558097-03:00" queuing="2013-06-09T00:35:34.4813841-03:00" start="2013-06-09T00:35:36.0254724-03:00" finish="2013-06-09T00:37:36.2303477-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarEntityFramework" storage="c:\users\fer\documents\github\prova_colegio_asp.net\sistemaacademico.foundation\camadaacessodados.teste\bin\debug\camadaacessodados.teste.dll" id="05cbdf22-f78a-918d-d853-be565652742a">
+      <Execution id="537ecf0a-5f0f-4cdd-acd3-a782c5b791f2" />
+      <TestMethod codeBase="C:/Users/Fer/Documents/GitHub/Prova_Colegio_Asp.net/SistemaAcademico.Foundation/CamadaAcessoDados.Teste/bin/Debug/CamadaAcessoDados.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CamadaAcessoDados.Teste.Teste, CamadaAcessoDados.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarEntityFramework" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05cbdf22-f78a-918d-d853-be565652742a" executionId="537ecf0a-5f0f-4cdd-acd3-a782c5b791f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="537ecf0a-5f0f-4cdd-acd3-a782c5b791f2" testId="05cbdf22-f78a-918d-d853-be565652742a" testName="CriarEntityFramework" computerName="FER-PC" duration="00:01:55.4409398" startTime="2013-06-09T00:35:36.9125232-03:00" endTime="2013-06-09T00:37:35.3282962-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="537ecf0a-5f0f-4cdd-acd3-a782c5b791f2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

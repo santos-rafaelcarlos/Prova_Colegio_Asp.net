@@ -1,0 +1,46 @@
+﻿
+@model Presentation.WebApp.Models.Comum.ListaItemViewModel<SistemaAcademico.Foundation.Aluno>
+
+@{ Html.RenderAction("Menu", "Navegacao"); }
+<p>
+    @Html.ActionLink("Novo", "Criar","Aluno")
+</p>
+
+   <div>
+        @Html.PaginasLinks(Model.InformacaoDePaginacao, x => Url.Action("Index", new { pagina = x, Items = Model.Items }))
+    </div>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataNascimento)
+        </td>
+        <td>
+        @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.ID })|
+            @Html.ActionLink("Detalhes", "Detalhes", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+</table>
+ 

@@ -1,0 +1,127 @@
+﻿@model SistemaAcademico.Foundation.Professor
+@{ Html.RenderAction("Menu", "Navegacao");}
+ <fieldset>
+            <legend>Professor</legend>
+    
+            <div class="display-label">
+            <h5>
+                @Html.DisplayNameFor(model => model.Nome)
+                </h5>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Nome)
+            </div>
+            
+    
+            <div class="display-label">
+            <h5>
+                @Html.DisplayNameFor(model => model.Nivel)
+            </h5>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Nivel)
+                                
+            </div>           
+                
+            <div class="display-label">
+            <h5>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </h5>
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.DataNascimento)
+                                
+            </div>           
+            <div id="telefone">
+                <fieldset>
+                    <legend>Telefone</legend>
+                    <div class="display-label">
+                    <h5>
+            @Html.DisplayNameFor(model => model.Telefone.DDD)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Telefone.DDD)
+          </div>
+                    <div class="display-label">
+                    <h5>
+            @Html.DisplayNameFor(model => model.Telefone.Numero)
+            </h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Telefone.Numero)
+            
+        </div>
+                </fieldset>
+        </div>
+            <div id="endereco">
+                 <fieldset>
+        <legend>Endereco</legend>
+                  
+        <div class="display-label"><h5>
+            @Html.DisplayNameFor(model => model.Endereco.TipoLogradouro)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.TipoLogradouro)
+            
+        </div>
+
+        <div class="display-label">
+            <h5>@Html.DisplayNameFor(model => model.Endereco.Logradouro)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.Logradouro)
+            
+        </div>
+
+        <div class="display-label">
+            <h5>@Html.DisplayNameFor(model => model.Endereco.Numero)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.Numero)
+            
+        </div>
+
+        <div class="display-label">
+           <h5> @Html.DisplayNameFor(model => model.Endereco.Complemento)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.Complemento)
+            
+        </div>
+
+        <div class="display-label">
+        <h5>
+            @Html.DisplayNameFor(model => model.Endereco.Bairro)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.Bairro)
+            
+        </div>
+
+        <div class="display-label">
+        <h5>
+            @Html.DisplayNameFor(model => model.Endereco.Cidade)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.Cidade)
+            
+        </div>
+         <div class="display-label">
+            <h5>@Html.DisplayNameFor(model => model.Endereco.UF)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.UF)
+            
+        </div>
+        <div class="display-label">
+            <h5>@Html.DisplayNameFor(model => model.Endereco.CEP)</h5>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Endereco.CEP)
+            
+        </div>       
+    </fieldset>
+   <p>
+    @Html.ActionLink("Editar", "Editar", new { id=Model.ID }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

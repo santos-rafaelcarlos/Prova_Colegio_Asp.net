@@ -59,11 +59,11 @@ namespace CamadaAcessoDados.NHibernate
 
         public static FluentConfiguration Build()
         {
-            string connString = @"Data Source=FER-PC\SQLEXPRESS;Initial Catalog=ColegioNH;Integrated Security=True";
+           // string connString = @"Data Source=FER-PC\SQLEXPRESS;Initial Catalog=ColegioNH;Integrated Security=True";
 
             return Fluently.Configure()
-                           //.Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromAppSetting("Colegio")))
-                           .Database(MsSqlConfiguration.MsSql2008.ConnectionString(connString))
+                           .Database(MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromAppSetting("Colegio")))
+                           //.Database(MsSqlConfiguration.MsSql2008.ConnectionString(connString))
                            .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()).Conventions.Add<StringColumnLengthConvention>())
                            .ExposeConfiguration(BuildSchema);
         }

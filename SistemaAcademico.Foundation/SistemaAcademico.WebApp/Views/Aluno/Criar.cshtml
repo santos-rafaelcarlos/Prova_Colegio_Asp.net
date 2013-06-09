@@ -1,0 +1,134 @@
+﻿@model SistemaAcademico.Foundation.Aluno
+
+@{
+    Layout = null;
+}
+@{ Html.RenderAction("Menu", "Navegacao");}
+
+<h2>Criar</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+            <legend>Aluno</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Nome)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Nome)
+                @Html.ValidationMessageFor(model => model.Nome)
+                 
+    
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.DataNascimento)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.DataNascimento)
+                @Html.ValidationMessageFor(model => model.DataNascimento)
+                
+            </div>           
+            <div id="telefone">
+                <fieldset>
+                    <legend>Telefone</legend>
+                    <div class="editor-label">
+            @Html.LabelFor(model => model.Telefone.DDD)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefone.DDD)
+            @Html.ValidationMessageFor(model => model.Telefone.DDD)
+        </div>
+                    <div class="editor-label">
+            @Html.LabelFor(model => model.Telefone.Numero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefone.Numero)
+            @Html.ValidationMessageFor(model => model.Telefone.Numero)
+        </div>
+                </fieldset>
+        </div>
+            <div id="endereco">
+                 <fieldset>
+        <legend>Endereco</legend>
+       
+                  
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.TipoLogradouro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.TipoLogradouro)
+            @Html.ValidationMessageFor(model => model.Endereco.TipoLogradouro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.Logradouro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.Logradouro)
+            @Html.ValidationMessageFor(model => model.Endereco.Logradouro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.Numero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.Numero)
+            @Html.ValidationMessageFor(model => model.Endereco.Numero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.Complemento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.Complemento)
+            @Html.ValidationMessageFor(model => model.Endereco.Complemento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.Bairro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.Bairro)
+            @Html.ValidationMessageFor(model => model.Endereco.Bairro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.Cidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.Cidade)
+            @Html.ValidationMessageFor(model => model.Endereco.Cidade)
+        </div>
+
+         <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.UF)
+        </div>
+        <div class="editor-field">
+                @Html.DropDownList("Estados")
+            </div>
+      
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco.CEP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco.CEP)
+            @Html.ValidationMessageFor(model => model.Endereco.CEP)
+        </div>       
+    </fieldset>
+            </div>
+            <p>
+                <input type="submit" value="Salvar" />                
+            </p>
+        </fieldset>
+    }
+    
+    
+    <div>
+        @Html.ActionLink("Voltar", "Index")
+    </div>
+
