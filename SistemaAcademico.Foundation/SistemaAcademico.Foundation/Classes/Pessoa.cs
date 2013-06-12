@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaAcademico.Foundation
 {
-    public abstract class Pessoa:IItem
+    public class Pessoa:IItem
     {
         public Pessoa()
         {  

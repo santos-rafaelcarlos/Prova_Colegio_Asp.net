@@ -51,7 +51,12 @@ namespace CamadaAcessoDados.EntityFramework
             modelBuilder.Entity<Telefone>()
                 .HasKey(a => a.TitularID)
                 .ToTable("Telefone");
-            
+
+            modelBuilder.Entity<Midia>()
+                .HasKey(m => m.ID).ToTable("Midia");
+            modelBuilder.Entity<Midia>().HasMany(m => m.Emprestimos).WithOptional();
+                
+
             base.OnModelCreating(modelBuilder);
         }
     }

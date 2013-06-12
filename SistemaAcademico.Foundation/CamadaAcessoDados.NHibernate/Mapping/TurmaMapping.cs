@@ -19,8 +19,8 @@ namespace CamadaAcessoDados.NHibernate.Mapping
             Map(t => t.HoraFim);
 
             References(t => t.Professor);            
-
-            HasMany(t => t.Alunos).Inverse();
+                        
+            HasMany(t => t.Alunos);
         }
     }
 }

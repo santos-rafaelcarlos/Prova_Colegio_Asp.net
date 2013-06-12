@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SistemaAcademico.WebApp.Models.RelatorioEmprestimoViewModel>
+<fieldset>
+    <legend>Midias Emprestadas</legend>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Autor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Pessoa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().DataEmprestimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
+        </th>       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo) |
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autor) |
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pessoa) |
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEmprestimo) |
+        </td>              
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>       
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Voltar", "Index")
+</p>
+    <h6>@DateTime.Now</h6>
+
+</fieldset>

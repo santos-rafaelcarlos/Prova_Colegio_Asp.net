@@ -1,0 +1,51 @@
+﻿@model SistemaAcademico.Foundation.Turma
+@{ Html.RenderAction("Menu", "Navegacao"); }
+<fieldset>
+    <legend>Turma</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nivel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nivel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataInicio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataInicio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataFim)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataFim)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HoraInicio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HoraInicio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HoraFim)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HoraFim)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id=Model.ID }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

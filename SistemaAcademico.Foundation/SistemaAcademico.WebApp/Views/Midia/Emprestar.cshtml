@@ -1,0 +1,28 @@
+﻿@model SistemaAcademico.Foundation.Midia
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Midia Emprestada</legend>
+        <h4>Deseja Emprestar midia?</h4>
+        <div class="editor-label">
+            <p>Pessoa</p>
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Pessoas")
+            
+        </div>
+        <p>
+            <input type="submit" value="Emprestar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>

@@ -1,0 +1,26 @@
+﻿@model SistemaAcademico.Foundation.Aluno
+
+<h3>Deseja Matricular o aluno?</h3>
+<fieldset>
+    <legend>Aluno</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataNascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Matricular" /> |
+        @Html.ActionLink("Voltar", "Matricular")
+    </p>
+}

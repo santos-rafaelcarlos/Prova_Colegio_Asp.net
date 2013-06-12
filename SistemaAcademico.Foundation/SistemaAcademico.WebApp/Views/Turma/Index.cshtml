@@ -37,24 +37,25 @@
 @foreach (var item in Model.Items) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Codigo)
+            @Html.DisplayFor(modelItem => item.Codigo) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Nivel)
+            @Html.DisplayFor(modelItem => item.Nivel) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DataInicio)
+            @Html.DisplayFor(modelItem => item.DataInicio) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DataFim)
+            @Html.DisplayFor(modelItem => item.DataFim) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.HoraInicio)
+            @Html.DisplayFor(modelItem => item.HoraInicio) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.HoraFim)
+            @Html.DisplayFor(modelItem => item.HoraFim) |
         </td>
         <td>
+            @Html.ActionLink("Matricular Alunos", "Matricular", new { id=item.ID }) |
             @Html.ActionLink("Editar", "Editar", new { id=item.ID }) |
             @Html.ActionLink("Detalhes", "Detalhes", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })

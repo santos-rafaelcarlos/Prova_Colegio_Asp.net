@@ -53,6 +53,8 @@
     <Compile Include="DAO\DAOGenerico.cs" />
     <Compile Include="Mapping\AlunoMapping.cs" />
     <Compile Include="Mapping\EnderecoMapping.cs" />
+    <Compile Include="Mapping\MidiaEmprestadaMapping.cs" />
+    <Compile Include="Mapping\MidiaMapping.cs" />
     <Compile Include="Mapping\PessoaMapping.cs" />
     <Compile Include="Mapping\ProfessorMapping.cs" />
     <Compile Include="Mapping\TelefoneMapping.cs" />

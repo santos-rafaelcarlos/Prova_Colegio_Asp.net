@@ -8,6 +8,7 @@ using Presentation.WebApp.Models.Comum;
 
 namespace SistemaAcademico.WebApp.Controllers
 {
+    [Authorize]
     public class ProfessorController : Controller
     {
         IRepositorio<Professor> repositorio = null;

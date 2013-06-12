@@ -1,3 +1,4 @@
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\SistemaAcademico.WebApp.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\SistemaAcademico.WebApp.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.DAL.dll
@@ -24,15 +25,15 @@ C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\System.Web.WebPages.Razor.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Unity.Mvc4.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\WebActivator.dll
-C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\EntityFramework.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\FluentNHibernate.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\NHibernate.dll
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\EntityFramework.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Iesi.Collections.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.DAL.pdb
-C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.EntityFramework.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.NHibernate.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.Repositorio.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\SistemaAcademico.Foundation.pdb
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\CamadaAcessoDados.EntityFramework.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Microsoft.Practices.Unity.xml
@@ -51,10 +52,11 @@ C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\System.Net.Http.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\System.Net.Http.WebRequest.xml
-C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\EntityFramework.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\FluentNHibernate.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\NHibernate.xml
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\EntityFramework.xml
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Iesi.Collections.xml
-C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\obj\Debug\SistemaAcademico.WebApp.dll
 C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\obj\Debug\SistemaAcademico.WebApp.pdb
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\Mvc.Mailer.dll
+C:\Users\Fer\Documents\GitHub\Prova_Colegio_Asp.net\SistemaAcademico.Foundation\SistemaAcademico.WebApp\bin\SecurityGuard.dll

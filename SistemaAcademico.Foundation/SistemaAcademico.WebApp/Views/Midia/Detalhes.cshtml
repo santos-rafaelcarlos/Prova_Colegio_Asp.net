@@ -1,0 +1,45 @@
+﻿@model SistemaAcademico.Foundation.Midia
+@{ Html.RenderAction("Menu", "Navegacao"); }
+
+<fieldset>
+    <legend>Midia</legend>
+
+    <div class="display-label">
+       <h5>  @Html.DisplayNameFor(model => model.Titulo)</h5>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">
+       <h5>  @Html.DisplayNameFor(model => model.Autor)</h5>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+        <h5> @Html.DisplayNameFor(model => model.NumerodeCopias)</h5>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumerodeCopias)
+    </div>
+
+    <div class="display-label">
+       <h5>  @Html.DisplayNameFor(model => model.NumerodeCopiasEmprestadas)</h5>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumerodeCopiasEmprestadas)
+    </div>
+
+    <div class="display-label">
+        <h5> @Html.DisplayNameFor(model => model.NumerodeCopiasDisponíveis)</h5>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumerodeCopiasDisponíveis)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { Id=Model.ID }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

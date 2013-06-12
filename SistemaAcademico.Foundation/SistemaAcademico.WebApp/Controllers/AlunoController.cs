@@ -8,6 +8,7 @@ using Presentation.WebApp.Models.Comum;
 
 namespace SistemaAcademico.WebApp.Controllers
 {
+    [Authorize]
     public class AlunoController : Controller
     {
         IRepositorio<Aluno> repositorio = null;

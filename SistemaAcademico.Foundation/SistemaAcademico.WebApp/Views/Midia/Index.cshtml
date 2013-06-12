@@ -1,0 +1,49 @@
+﻿@model  Presentation.WebApp.Models.Comum.ListaItemViewModel<SistemaAcademico.Foundation.Midia>
+
+@{ Html.RenderAction("Menu", "Navegacao"); }
+
+<p>
+    @Html.ActionLink("Criar", "Criar") |
+   
+    @Html.ActionLink("Relatorio", "RelatorioEmprestimo")
+</p>
+   <div>
+        @Html.PaginasLinks(Model.InformacaoDePaginacao, x => Url.Action("Index", new { pagina = x, Items = Model.Items }))
+    </div>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().Autor)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.Items.FirstOrDefault().NumerodeCopiasDisponíveis)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo) |
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autor) |
+        </td>
+        <th>
+            @Html.DisplayFor(modelItem => item.NumerodeCopiasDisponíveis) |
+        </th>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.ID }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID }) |
+            @Html.ActionLink("Emprestar", "Emprestar", new { id=item.ID }) |
+            @Html.ActionLink("Devolver", "Devolver", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

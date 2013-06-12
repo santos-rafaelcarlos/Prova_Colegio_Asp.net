@@ -1,0 +1,47 @@
+﻿@model SistemaAcademico.Foundation.Midia
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@{ Html.RenderAction("Menu", "Navegacao"); }
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Midia</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Titulo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Titulo)
+            @Html.ValidationMessageFor(model => model.Titulo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Autor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Autor)
+            @Html.ValidationMessageFor(model => model.Autor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NumerodeCopias)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NumerodeCopias)
+            @Html.ValidationMessageFor(model => model.NumerodeCopias)
+        </div>
+        <p>
+            <input type="submit" value="Salvar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>

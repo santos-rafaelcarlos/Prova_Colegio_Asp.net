@@ -1,0 +1,34 @@
+﻿@model SistemaAcademico.Foundation.Midia
+@{ Html.RenderAction("Menu", "Navegacao"); }
+
+<h3>Deseja excluir a midia?</h3>
+<fieldset>
+    <legend>Midia</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Autor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NumerodeCopias)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumerodeCopias)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+}

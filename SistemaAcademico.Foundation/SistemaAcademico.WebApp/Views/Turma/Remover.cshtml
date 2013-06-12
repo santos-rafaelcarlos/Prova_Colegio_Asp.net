@@ -1,0 +1,26 @@
+﻿@model SistemaAcademico.Foundation.Aluno
+
+<h3>Deseja Remover o aluno?</h3>
+<fieldset>
+    <legend>Aluno</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataNascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Remover" /> |
+        @Html.ActionLink("Voltar", "Matricular")
+    </p>
+}

@@ -34,7 +34,9 @@ namespace SistemaAcademico.WebApp
     {
         container.RegisterType<IRepositorio<Aluno>, Repositorio<Aluno>>(new ContainerControlledLifetimeManager());
         container.RegisterType<IRepositorio<Professor>, Repositorio<Professor>>(new ContainerControlledLifetimeManager());
-        container.RegisterType<IRepositorio<Turma>, Repositorio<Turma>>(new ContainerControlledLifetimeManager());     
+        container.RegisterType<IRepositorio<Turma>, Repositorio<Turma>>(new ContainerControlledLifetimeManager());
+        container.RegisterType<IRepositorio<Pessoa>, Repositorio<Pessoa>>(new ContainerControlledLifetimeManager());
+        container.RegisterType<IRepositorio<Midia>, Repositorio<Midia>>(new ContainerControlledLifetimeManager()); 
     }
   }
 }

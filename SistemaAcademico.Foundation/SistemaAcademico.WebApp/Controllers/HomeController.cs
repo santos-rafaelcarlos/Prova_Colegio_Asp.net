@@ -16,21 +16,28 @@ namespace SistemaAcademico.WebApp.Controllers
             return View();
         }
 
-
+        [Authorize]
         public ActionResult ListarAluno()
         {
             return RedirectToAction("Index","Aluno");
         }
 
-
+        [Authorize]
         public ActionResult ListarProfessor()
         {
             return RedirectToAction("Index", "Professor");
         }
-
+       
+        [Authorize]
         public ActionResult ListarTurma()
         {
             return RedirectToAction("Index", "Turma");
+        }
+
+        [Authorize]
+        public ActionResult ListarMidias()
+        {
+            return RedirectToAction("Index", "Midia");        
         }
     }
 }

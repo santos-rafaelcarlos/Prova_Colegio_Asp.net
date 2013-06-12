@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -45,14 +48,21 @@
     <Reference Include="Microsoft.Practices.Unity.Configuration">
       <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
     </Reference>
+    <Reference Include="Mvc.Mailer">
+      <HintPath>..\packages\MvcMailer.4.0\lib\40\Mvc.Mailer.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SecurityGuard">
+      <HintPath>..\packages\SecurityGuard.MVC4.1.0.10\lib\net40\SecurityGuard.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
@@ -122,24 +132,73 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\SecurityGuard\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\SecurityGuard\Controllers\MembershipController.cs" />
+    <Compile Include="Areas\SecurityGuard\Controllers\RoleController.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\ChangePasswordViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\DashboardViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\ForgotPasswordViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\GrantRolesToUserViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\JsonResponse.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\ManageRolesViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\ManageUsersViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\RegisterViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\ResponseItem.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\RoleViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\SelectObject.cs" />
+    <Compile Include="Areas\SecurityGuard\Models\UserViewModel.cs" />
+    <Compile Include="Areas\SecurityGuard\SecurityGuardAreaRegistration.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\AlunoController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\MidiaController.cs" />
     <Compile Include="Controllers\ProfessorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavegacaoController.cs" />
+    <Compile Include="Controllers\SGAccountController.cs" />
     <Compile Include="Controllers\TurmaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\PaginacaoHelper.cs" />
+    <Compile Include="Mailers\IPasswordResetMailer.cs" />
+    <Compile Include="Mailers\Models\MailerModel.cs" />
+    <Compile Include="Mailers\PasswordResetMailer.cs" />
     <Compile Include="Models\ListaItemViewModel.cs" />
+    <Compile Include="Models\LogOnViewModel.cs" />
     <Compile Include="Models\Navegacao.cs" />
+    <Compile Include="Models\RelatorioEmprestimoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\SecurityGuard\images\blue_ico.png" />
+    <Content Include="Content\SecurityGuard\images\blue_message.gif" />
+    <Content Include="Content\SecurityGuard\images\go.gif" />
+    <Content Include="Content\SecurityGuard\images\green_ico.png" />
+    <Content Include="Content\SecurityGuard\images\green_message.gif" />
+    <Content Include="Content\SecurityGuard\images\negative.gif" />
+    <Content Include="Content\SecurityGuard\images\next.gif" />
+    <Content Include="Content\SecurityGuard\images\pag_bg.gif" />
+    <Content Include="Content\SecurityGuard\images\positive.gif" />
+    <Content Include="Content\SecurityGuard\images\prev.gif" />
+    <Content Include="Content\SecurityGuard\images\red_ico.png" />
+    <Content Include="Content\SecurityGuard\images\red_message.gif" />
+    <Content Include="Content\SecurityGuard\images\td_bg1.gif" />
+    <Content Include="Content\SecurityGuard\images\td_bg2.gif" />
+    <Content Include="Content\SecurityGuard\images\white_ico.png" />
+    <Content Include="Content\SecurityGuard\images\white_message.gif" />
+    <Content Include="Content\SecurityGuard\images\yellow_ico.png" />
+    <Content Include="Content\SecurityGuard\images\yellow_message.gif" />
+    <Content Include="Content\SecurityGuard\pagination.css" />
+    <Content Include="Content\SecurityGuard\scripts\jquery-1.6.1.min.js" />
+    <Content Include="Content\SecurityGuard\scripts\jquery.jqia.selects.js" />
+    <Content Include="Content\SecurityGuard\scripts\jquery.validate.min.js" />
+    <Content Include="Content\SecurityGuard\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\SecurityGuard\scripts\modernizr-1.7.min.js" />
+    <Content Include="Content\SecurityGuard\securityguard.css" />
     <Content Include="Global.asax" />
     <Content Include="Unity.Mvc4.README.txt" />
     <Content Include="Web.config" />
@@ -220,6 +279,95 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Turma\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Criar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Detalhes.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Editar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Matricular.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Incluir.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Midia\Criar.cshtml" />
+    <Content Include="Views\Midia\Delete.cshtml" />
+    <Content Include="Views\Midia\Editar.cshtml" />
+    <Content Include="Views\Midia\Emprestar.cshtml" />
+    <Content Include="Views\Midia\Index.cshtml" />
+    <Content Include="Views\Midia\RelatorioEmprestimo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Midia\Detalhes.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Midia\ConfirmarDevolucao.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Midia\Devolver.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\ForgotPasswordSuccess.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\ForgotPassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\EnterSecretAnswer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\ChangePasswordSuccess.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SGAccount\ChangePassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PasswordResetMailer\PasswordReset.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PasswordResetMailer\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Shared\_SecurityGuardLayoutPage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Role\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Membership\Update.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Membership\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Membership\GrantRolesToUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Membership\CreateUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\SecurityGuard\Views\Dashboard\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Turma\Remover.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

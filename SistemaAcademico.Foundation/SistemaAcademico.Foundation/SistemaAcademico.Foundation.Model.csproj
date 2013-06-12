@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Classes\Aluno.cs" />
     <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Midia.cs" />
     <Compile Include="Enums\Estado.cs" />
     <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IRepositorio.cs" />

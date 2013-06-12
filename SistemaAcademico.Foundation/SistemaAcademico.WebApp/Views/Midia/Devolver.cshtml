@@ -1,0 +1,43 @@
+﻿@model SistemaAcademico.Foundation.Midia
+
+<fieldset>
+    <legend>Midia</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Autor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <table>
+    <tr>
+        <th>@Html.DisplayNameFor(model=>model.Emprestimos.FirstOrDefault().Pessoa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Emprestimos) {
+   if(item.Status == SistemaAcademico.Foundation.MidiaStatus.Emprestado)
+    {
+    <tr>
+    
+        <td>
+            @Html.DisplayFor(modelItem => item.Pessoa.Nome) |
+        </td>
+        <td>
+            @Html.ActionLink("Devolver", "ConfirmarDevolucao", new { id=item.ID }) 
+        </td>
+    </tr>
+    }
+    }
+
+</fieldset>
+

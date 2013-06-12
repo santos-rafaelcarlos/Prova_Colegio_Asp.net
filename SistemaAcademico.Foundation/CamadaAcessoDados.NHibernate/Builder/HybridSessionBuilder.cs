@@ -72,11 +72,13 @@ namespace CamadaAcessoDados.NHibernate
         {
             config.SetProperty("current_session_context_class", "thread_static");
 
+            /////Comandos que criam as tabelas
             //new SchemaExport(config)
             //    .Drop(true, true);
 
             //new SchemaExport(config)
             //    .Create(true, true);
+            /////fim
         }
 
         public static void ResetSession()

@@ -27,13 +27,13 @@
 @foreach (var item in Model.Items) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Nome)
+            @Html.DisplayFor(modelItem => item.Nome) |
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DataNascimento)
+            @Html.DisplayFor(modelItem => item.DataNascimento) |
         </td>
         <td>
-        @Html.DisplayFor(modelItem => item.Status)
+        @Html.DisplayFor(modelItem => item.Status) |
         </td>
         <td>
             @Html.ActionLink("Editar", "Editar", new { id=item.ID })|

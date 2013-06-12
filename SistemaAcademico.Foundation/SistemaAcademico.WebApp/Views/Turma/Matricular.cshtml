@@ -1,0 +1,54 @@
+﻿@model SistemaAcademico.Foundation.Turma
+
+@{ Html.RenderAction("Menu", "Navegacao"); }
+
+<fieldset>
+<legend>Turma @Model.Codigo</legend>
+<table>
+                <tr>
+                    <td style="vertical-align:top">
+                    <fieldset>
+                    <legend>Alunos</legend>
+                        <table>
+                        <tr>
+                        <th>@Html.DisplayNameFor(model => model.Alunos.FirstOrDefault().Nome)</th>
+              <th>@Html.DisplayNameFor(model => model.Alunos.FirstOrDefault().DataNascimento)</th>              
+              <th></th>
+              </tr>
+              @foreach (SistemaAcademico.Foundation.Aluno item in ViewBag.Alunos)
+              {                
+                  
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DataNascimento)</td>                          
+                        <td>@Html.ActionLink("+", "Incluir", new { alunoId = item.ID, turmaId = Model.ID })</td>
+                    </tr>
+                  
+            }
+            </table>
+            </fieldset>
+                    </td>
+                    <td style="vertical-align:top">
+                        <fieldset>
+      <legend>Alunos Selecionados</legend>
+      <table>
+          <tr>
+              <th>@Html.DisplayNameFor(model => model.Alunos.FirstOrDefault().Nome)</th>
+              <th>@Html.DisplayNameFor(model => model.Alunos.FirstOrDefault().DataNascimento)</th>              
+              <th></th>
+          </tr>
+          @foreach (SistemaAcademico.Foundation.Aluno item in Model.Alunos)
+          {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nome) |</td>
+                    <td>@Html.DisplayFor(modelItem => item.DataNascimento) |</td>
+                    <td>@Html.ActionLink("-", "Remover", new { alunoId = item.ID, turmaId = Model.ID })</td>
+                   
+                </tr>
+            }
+      </table>
+  </fieldset>
+                       </td>
+                </tr>    
+            </table>
+            </fieldset>

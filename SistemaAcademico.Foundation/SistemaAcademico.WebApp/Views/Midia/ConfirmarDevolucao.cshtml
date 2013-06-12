@@ -1,0 +1,26 @@
+﻿@model SistemaAcademico.Foundation.MidiaEmprestada
+
+<h3>Confirma a devolução da midia?</h3>
+<fieldset>
+    <legend>Midia Emprestada</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataEmprestimo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataEmprestimo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pessoa)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pessoa.Nome)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Devolver" /> |
+        @Html.ActionLink("Voltar", "Devolver")
+    </p>
+}

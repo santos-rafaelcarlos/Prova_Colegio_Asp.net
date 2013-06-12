@@ -15,8 +15,8 @@ namespace CamadaAcessoDados.NHibernate.Mapping
             Map(p => p.Nome);            
             Map(p => p.DataNascimento);
 
-            References(p => p.Telefone).ForeignKey("TitularID").Cascade.All();
-            References(p => p.Endereco).ForeignKey("ID").Cascade.All();          
+            References(p => p.Telefone).Cascade.All();
+            References(p => p.Endereco).Cascade.All();          
         }
     }
 }
